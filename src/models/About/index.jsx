@@ -1,4 +1,17 @@
-import {Container , WrapperContainer , Description, User , Computador} from './styles'
+import {
+  Container, 
+  WrapperContainer,
+  Description, 
+  User, 
+  Computador,
+  Tecnologias,
+  React ,
+  Js,
+  Typescript,
+  NodeJs,
+  Html,
+  Css
+} from './styles'
 
 import {DashBoard} from '../components/DashBoard'
 
@@ -13,13 +26,34 @@ export function About(){
 
 
         <Description>
-          Boomm! meu nome é Daniel,
-          atualmente tenho 18, sempre gostei de tecnologia,
-          quando era uma criança queria ser um hacker que nem o 007,
-          pórem quando cresci acabei sendo programador, meio caminho andado. <Computador/>
+          Boomm! meu nome é Daniel, <br />
+          atualmente tenho 18, sempre gostei de tecnologia, <br />
+          quando era uma criança queria ser um hacker que nem o 007,<br />
+          pórem quando cresci acabei sendo programador,<br />
+          meio caminho andado.
+          Comecei a programar com 16 anos por diversão, <br />
+          quando descobri que poderia ganhar dinheiro com um Hobbit, <br />
+          comecei a estudar mais sério e nunca parei até agora. 
+          <Computador/>
         </Description>
 
+
       </WrapperContainer>
+
+      <Tecnologias>
+          <h3 className='tecnologias'>Tecnologias que estudo e uso:</h3>
+            <ul>
+              <li>React<React/></li>
+              <li>JavaScript<Js/></li>
+              <li>Typescript<Typescript/></li>
+              <li>NodeJs<NodeJs/></li>
+              <li>HTML<Html/></li>
+              <li>CSS<Css/></li>
+            </ul>
+
+
+
+      </Tecnologias>
 
     </Container>
   )

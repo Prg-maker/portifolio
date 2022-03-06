@@ -6,4 +6,11 @@ export {BsInstagram} from 'react-icons/bs'
 export {ImLinkedin2} from 'react-icons/im'
 export {GoMarkGithub} from 'react-icons/go'
 export {FaReact} from 'react-icons/fa'
-export {GrPersonalComputer} from 'styled-components/gr'
+export {GiComputing} from 'react-icons/gi'
+export {
+  SiJavascript,
+  SiTypescript,
+  SiNodedotjs,
+  SiHtml5,
+  SiCss3
+} from 'react-icons/si'
