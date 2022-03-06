@@ -8,7 +8,8 @@ import {
   IconsRedesSocias,
   Instagram,
   Linkedin,
-  Separator
+  Separator,
+  Github
 } from './styles'
 import DanielSVG from '../../../assets/DF.svg'
 
@@ -22,7 +23,7 @@ export function DashBoard(){
         <a href="/">
           <Home/>
         </a>
-        <a href="">
+        <a href="/about">
           <User/>
         </a>
         <a href="/projects">
@@ -43,6 +44,10 @@ export function DashBoard(){
 
         <a href="#">
           <Linkedin/>
+        </a>
+
+        <a href="#">
+          <Github/>
         </a>
 
       </IconsRedesSocias>

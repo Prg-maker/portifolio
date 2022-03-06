@@ -6,7 +6,8 @@ import {
   FiSettings,
   HiOutlineMail,
   ImLinkedin2,
-  RiHome2Line
+  RiHome2Line,
+  GoMarkGithub
 } from '../../../styles/icons'
 
 export const Container = styled.div`
@@ -112,6 +113,11 @@ export const Instagram = styled(BsInstagram)`
   ${styleIconsUser}
 `
 export const Linkedin = styled(ImLinkedin2)`
+  ${styleIconsUser}
+
+`
+
+export const Github = styled(GoMarkGithub)`
   ${styleIconsUser}
 
 `
