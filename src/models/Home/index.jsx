@@ -9,7 +9,13 @@ import {
   Button
 } from './styles'
 
+import {Link} from 'react-router-dom'
+
 export function Home(){
+
+
+
+
   return(
     <Container>
       <DashBoard/>
@@ -24,10 +30,11 @@ export function Home(){
           </Text>
 
           <Description>Front End Developer / Back End / Freelancer</Description>
-
-          <Button >
-            Fale Comigo!
-          </Button>
+          <Link to="/falarcomigo">
+            <Button >
+                Fale Comigo!
+            </Button>
+          </Link>
 
 
 

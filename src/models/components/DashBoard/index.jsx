@@ -6,11 +6,13 @@ import {
   Settings,
   Email,
   IconsRedesSocias,
-  Instagram,
   Linkedin,
   Separator,
   Github
 } from './styles'
+
+import { Link } from 'react-router-dom'
+
 import DanielSVG from '../../../assets/DF.svg'
 
 export function DashBoard(){
@@ -20,33 +22,34 @@ export function DashBoard(){
 
       <IconsUser>
 
-        <a href="/">
+        <Link to="/">
           <Home/>
-        </a>
-        <a href="/about">
-          <User/>
-        </a>
-        <a href="/projects">
-          <Settings/>
-        </a>
+        </Link>
 
-        <a href="">
-            <Email/>
-        </a>
+        <Link to="/about">
+          <User/>
+        </Link>
+
+        <Link to="/projects">
+          <Settings/>
+        </Link>
+      
+
+        <Link to="/FalarComigo">
+          <Email/>
+        </Link>
        
       </IconsUser>
       <Separator/>
       <IconsRedesSocias>
 
-        <a href="#">
-          <Instagram/>
-        </a>
+        
 
-        <a href="#">
+        <a href="https://www.linkedin.com/in/daniel-silva-73b2371b4/">
           <Linkedin/>
         </a>
 
-        <a href="#">
+        <a href="https://github.com/Prg-maker">
           <Github/>
         </a>
 

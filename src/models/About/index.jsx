@@ -16,6 +16,10 @@ import {
 import {DashBoard} from '../components/DashBoard'
 
 export function About(){
+
+  
+
+
   return(
     <Container>
       <DashBoard/>
@@ -28,7 +32,7 @@ export function About(){
         <Description>
           Boomm! meu nome é Daniel, <br />
           atualmente tenho 18, sempre gostei de tecnologia, <br />
-          quando era uma criança queria ser um hacker que nem o 007,<br />
+          quando era uma criança queria ser um hacker que nem o Neo do Matrix,<br />
           pórem quando cresci acabei sendo programador,<br />
           meio caminho andado.
           Comecei a programar com 16 anos por diversão, <br />
