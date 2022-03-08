@@ -11,7 +11,7 @@ export function RoutesWeb(){
         <Route path='/' element={<Home/>}/>
         <Route path='/projects' element={<Projects/>}/>
         <Route path='/about' element={<About/>}/>
-        <Route path='/FalarComigo' element={<FalarComigo/>}/>
+        <Route path='/falarComigo' element={<FalarComigo/>}/>
       </Routes>
     </BrowserRouter>
   )

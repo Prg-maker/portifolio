@@ -7,7 +7,7 @@ import {
   SiTypescript,
   SiNodedotjs,
   SiHtml5,
-  SiCss3
+  SiCss3,
 } from'../../styles/icons'
 
 export const Container = styled.div`
@@ -117,3 +117,4 @@ export const Css = styled(SiCss3)`
 
   color:#1557a1 ;
 `
+
