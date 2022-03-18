@@ -14,6 +14,7 @@ import {
 } from './styles'
 
 import {DashBoard} from '../components/DashBoard'
+import {MobalDashBoard} from '../components/MobalDashBoard' 
 
 export function About(){
 
@@ -23,6 +24,7 @@ export function About(){
   return(
     <Container>
       <DashBoard/>
+      <MobalDashBoard/>
 
       <WrapperContainer>
         <h2><User/> Sobre mim!</h2>

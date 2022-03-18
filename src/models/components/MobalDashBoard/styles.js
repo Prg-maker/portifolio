@@ -11,63 +11,24 @@ import {
 } from '../../../styles/icons'
 
 export const Container = styled.div`
-  width: 90px;
-  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: #181818;
+  bottom: 0;
 
-  background:#181818 ;
   display: flex;
-  flex-direction: column;
-  align-items:center ;
+  justify-content: center;
 
-  animation-name: AnimationDashBord;
-  animation-duration:  1s;
-
-  >img{
-    position:relative ;
-    right:10px ;
-    width: 72px ;
-    height: 72px ;
-    margin-top: 45px ;
-    cursor: pointer;
-    animation-name: AnimationImg;
-    animation-duration:  2.5s;
-    
-  }
-
-
-  @keyframes AnimationDashBord{
-    from{
-      opacity:0.5;
-      transform:translateX(-30%) ;
-    }
-    to{
-      opacity:1 ;
-      transform:translateX(0%) ;
-
-    }
-  }
-
-  @keyframes AnimationImg{
-    from{
-      opacity:0;
-    }
-    to{
-      opacity:1 ;
-
-    }
-  }
-
-  @media(max-width: 700px){
+  @media(min-width: 700px){
     display: none;
-  }
-
+  }   
 `
 export const IconsUser = styled.div`
-  display:flex ;
-  flex-direction: column ;
+  width: 70%;
+  display: flex;
   align-items: center;
-  margin-top: 50px ;
-  margin-bottom: 40px;
+  justify-content: space-around;
+  margin-right: 70px;
 `
 const styleIconsUser = css`
   width:30px ;
@@ -76,6 +37,7 @@ const styleIconsUser = css`
   cursor: pointer;
   transition: 0.1s;
   margin: 15px 0;
+  
   &:hover{
     filter: brightness(0.7);
   }
@@ -99,19 +61,13 @@ export const Email = styled(HiOutlineMail)`
 
 `
 
-export const Separator = styled.div`
- 
 
-  width: 75%;
-  height:1px ;
-  background:#444444;
-  margin: 20px 0;
-
-`
 
 export const IconsRedesSocias = styled.div`
-  display:flex ;
-  flex-direction:column ;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
 
 `
 export const Instagram = styled(BsInstagram)`

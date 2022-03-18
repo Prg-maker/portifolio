@@ -1,4 +1,5 @@
 import {DashBoard} from '../components/DashBoard' 
+import {MobalDashBoard} from '../components/MobalDashBoard' 
 import Logo from '../../assets/Rectangle 1.svg'
 import {
   Container,
@@ -19,6 +20,7 @@ export function Home(){
   return(
     <Container>
       <DashBoard/>
+      <MobalDashBoard/>
 
       <WrapperContent>
 

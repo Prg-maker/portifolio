@@ -41,6 +41,15 @@ export const Container = styled.div`
   }
 
 
+  @media(max-width: 700px){
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    height: 100vh;
+  }
+
+
+
 `
 
 
@@ -66,17 +75,27 @@ export const WrapperContent = styled.div`
     }
   }
 
+  
+
 `
-export const Text = styled.div`
+export const Text = styled.h1`
   line-height:64px ;
   font-size:  50px;
   font-weight: bold;
   font-style:normal ;
+
+
+  @media(max-width: 500px){
+    font-size:  32px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+  }
+
 `
-export const Name = styled.div`
+export const Name = styled.p`
   color: #F46197;
 `
-export const Description = styled.div`
+export const Description = styled.p`
   font-style:normal ;
   font-size: 14px;
   margin-top: 10px;
