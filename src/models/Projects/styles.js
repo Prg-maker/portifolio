@@ -7,10 +7,10 @@ export const Container = styled.div`
   background: #1D1D1D;
   color:white ;
   height:100% ;
+  .mobal{
 
-  .dashBoard{
-    position: fixed;
   }
+  
   .WrapperContainer{
     display:flex ;
     flex-direction: column;
@@ -21,6 +21,22 @@ export const Container = styled.div`
       font-size: 64px;
       font-weight:500 ;
       line-height:64px ;
+    }
+
+    @media(max-width: 700px){
+      margin: 0;
+      padding: 0;
+      background:red;
+      display: none;
+    }
+
+
+   
+  }
+  @media(max-width: 700px){
+    *{
+      margin: 0;
+      padding: 0;
     }
   }
 `
@@ -41,7 +57,10 @@ export const Settings = styled(FiSettings)`
       transform:rotate(0deg) ;
 
     }
+    
   }
+
+
 
 `
 
@@ -51,11 +70,22 @@ export const ProjectsContainer = styled.div`
   h3{
     margin-top:25px ;
   }
+
+  
 `  
 export const Content = styled.div`
   display: grid;
   grid-template-columns: auto  auto;
   margin-bottom:50px ;
+
+  @media(max-width: 700px){
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background:red;
+  }
+
 `  
 export const ProjectCard = styled.img`
   width: 320px;
@@ -93,6 +123,7 @@ export const ProjectCard = styled.img`
 
     }
   }
+
   
 `  
 export const Description = styled.div`

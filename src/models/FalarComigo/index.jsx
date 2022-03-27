@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import {DashBoard } from '../components/DashBoard' 
+import { MobalDashBoard } from '../components/MobalDashBoard'
 
 import {Container , WrapperContainer, Email, Account, Text, Coffe, Github, Linkedin, Arrow} from './styles'
 
@@ -8,6 +9,7 @@ export function FalarComigo(){
 
     <Container>
       <DashBoard/>
+      <MobalDashBoard/>
 
 
       <WrapperContainer> 

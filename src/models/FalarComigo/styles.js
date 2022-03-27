@@ -55,42 +55,24 @@ export const Container = styled.div`
         transform:translateX(120%) ;
       }
 
-
-     /* 0%{
-        width:245px ;
-        height:245px ;
-      }
-      10%{
-        width:200px ;
-        height:200px ;
-      }
-      20%{
-        width:150px ;
-        height:150px ;
-      }
-      30%{
-        width:100px ;
-        height:100px ;
-      }
-      40%{
-        width:50px ;
-        height:50px ;
-      }
-      50%{
-        width:40px ;
-        height:40px ;
-        opacity:.5 ;
-      }
-      40%{
-        width:20px ;
-        height:20px ;
-        opacity:0 ;
-        display: none ;
-      }*/
-     
      
     }
+
+
+   
   
+  }
+
+  @media(max-width: 700px){
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    .avatar{
+      display: none;
+    }
+
   }
   
 `
@@ -110,8 +92,28 @@ export const WrapperContainer = styled.div`
     line-height: 64px;
     margin-top:100px ;
     align-items:center ;
+
+    @media(max-width: 700px){
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      text-overflow: ellipsis;
+      >svg{
+        width: 30px;
+        height: 30px;
+      }
+    }
   }
 
+
+  @media(max-width: 700px){
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 ` 
 export const Email = styled(HiOutlineMail)`
   width: 100px;
@@ -120,7 +122,7 @@ export const Email = styled(HiOutlineMail)`
 export const Account = styled.div`
  
   margin-top: 50px ;
-
+  
 
 `
 

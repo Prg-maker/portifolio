@@ -3,13 +3,16 @@ import {Container , Settings , ProjectsContainer , Content , ProjectCard , Descr
 import {DashBoard} from '../components/DashBoard'
 import UicloneP from '../../assets/uiCloneP.png'
 import uiCloneDicord from '../../assets/uiCloneDicord.png'
+import { MobalDashBoard } from '../components/MobalDashBoard'
 
 export function Projects(){
   return(
     <Container>
 
-      <div className='dashBoard'>
-          <DashBoard/>
+      <DashBoard/>
+
+      <div className='mobal'>
+        <MobalDashBoard/>
       </div>
 
       <div className='WrapperContainer'>
