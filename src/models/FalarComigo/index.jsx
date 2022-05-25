@@ -45,7 +45,6 @@ export function FalarComigo(){
       
         <Arrow/>
       
-        <img src='https://media-exp1.licdn.com/dms/image/C4D03AQE1xpX5aODCtg/profile-displayphoto-shrink_800_800/0/1640389916961?e=1652313600&v=beta&t=GgoYvoyoWsQxT-YPfWnZibkgR15FMI2w2iPdDYCRFwc' alt="" />
 
         <img src='https:/github.com/Prg-maker.png' alt="" />
 

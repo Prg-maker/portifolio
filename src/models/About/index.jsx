@@ -25,7 +25,7 @@ export function About(){
     <Container>
       <DashBoard/>
       <MobalDashBoard/>
-
+      
       <WrapperContainer>
         <h2><User/> Sobre mim!</h2>
 

@@ -16,18 +16,39 @@ export const Container = styled.div`
   display:flex ;
   align-items:center ;
   color:white ;
+
+  @media (max-width:600px) {
+    flex-direction: column;
+  }
+
+ 
+  .mobile{
+    
+    z-index: 10;
+  }
+
 `
  
 
 export const WrapperContainer = styled.div`
-  margin-left: 54px;
+  margin-left: 3rem;
 
   h2{
     font-weight: 500;
-    font-size: 64px;
-    line-height: 64px;
-    margin-bottom: 14px;
+    font-size: 4rem;
+    line-height: 4rem;
+    margin: 1rem 0 ;
+
+    @media (max-width:380px){
+      font-size: 3rem;
+      margin-left: 0rem;
+
+    }
   }
+  @media (max-width:380px){
+    margin-left: 1rem;
+  }
+
 `  
 
 
@@ -36,6 +57,11 @@ export const Description = styled.div`
   font-style: normal;
   font-size: 20px;
   line-height:38px ;
+
+  @media (max-width:380px){
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
 
 `
 export const User = styled(AiOutlineUser)`
@@ -57,6 +83,9 @@ export const User = styled(AiOutlineUser)`
       color: white;
     }
   }
+  @media (max-width:600px) {
+    display: none;
+  }
 `
 export const Computador  = styled(GiComputing)`
   width:25px ;
@@ -65,9 +94,18 @@ export const Computador  = styled(GiComputing)`
 `
 
 export const Tecnologias = styled.div`
- 
+  h3{
+   margin-top: 1rem;
+  }
 
   ul{
+
+    @media (max-width:600px) {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: auto auto ;
+    }
+
     li{
       display:flex ;
       align-items:center ;
@@ -75,7 +113,11 @@ export const Tecnologias = styled.div`
     margin-left:10px ;
     margin-bottom:100px ;
   }
-  margin-left:50px ;
+  margin-left:3rem ;
+
+  @media (max-width:600px) {
+    margin-left:1rem ;
+  }
 `
 
 const styleIcons = css`

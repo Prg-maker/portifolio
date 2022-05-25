@@ -36,9 +36,7 @@ export const Container = styled.div`
       &:hover{
         filter: brightness(1.5);
         cursor: pointer;
-        animation-name: animationPhoto;
-        animation-duration:5s ;
-        animation-direction: alternate;
+      
         cursor: grabbing;
       }
 
@@ -46,17 +44,7 @@ export const Container = styled.div`
 
     }
 
-    @keyframes animationPhoto{
-
-      from{
-        transform:translateX(0%) ;
-        transform:translateY(0%) ;
-      }to{
-        transform:translateX(120%) ;
-      }
-
-     
-    }
+    
 
 
    

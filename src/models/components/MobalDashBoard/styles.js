@@ -15,7 +15,7 @@ export const Container = styled.div`
   position: absolute;
   background-color: #181818;
   bottom: 0;
-
+z-index: 10;
   display: flex;
   justify-content: center;
 

@@ -6,48 +6,45 @@ export const Container = styled.div`
   display:flex ;
   background: #1D1D1D;
   color:white ;
-  height:100% ;
-  .mobal{
+  overflow: hidden;
 
-  }
-  
+
   .WrapperContainer{
+    position: relative;
     display:flex ;
     flex-direction: column;
     justify-content:center ;
-    margin-left:190px ;
+    background: #1D1D1D;
+    padding-left:10% ;
+
 
     h2{
-      font-size: 64px;
+      font-size: 4rem;
       font-weight:500 ;
-      line-height:64px ;
+      @media (max-width:1000px) {
+        font-size: 2rem;
+
+      }
     }
 
-    @media(max-width: 700px){
-      margin: 0;
-      padding: 0;
-      background:red;
-      display: none;
-    }
+   
 
 
    
   }
-  @media(max-width: 700px){
-    *{
-      margin: 0;
-      padding: 0;
-    }
-  }
+
 `
 
 
 export const Settings = styled(FiSettings)`
-  width:100px ;
+  max-width:100%;
   height:100px ;
-  margin-right: 20px;
+  padding-right: 10px;
+  margin-right: 10px;
   animation-name: FrameWork ;
   animation: FrameWork 3s linear infinite;
+
+  
   @keyframes FrameWork {
     from{
       transform:rotate(360deg) ;
@@ -66,30 +63,34 @@ export const Settings = styled(FiSettings)`
 
 
 export const ProjectsContainer = styled.div`
-
   h3{
-    margin-top:25px ;
+    font-size: 1.5rem;
+    @media (max-width:500px) {
+      display: none;
+    }
   }
+
 
   
 `  
 export const Content = styled.div`
   display: grid;
   grid-template-columns: auto  auto;
+  grid-template-rows: auto  auto;
   margin-bottom:50px ;
 
-  @media(max-width: 700px){
+  @media(max-width: 1000px){
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background:red;
+    overflow-y:scroll ;
   }
 
 `  
 export const ProjectCard = styled.img`
-  width: 320px;
-  height: 155px;
+  max-width: 20rem;
+  height: 105px;
   border-radius:10px ;
   border: 3px solid #F46197 ;
   opacity: 0.5 ;
@@ -127,7 +128,7 @@ export const ProjectCard = styled.img`
   
 `  
 export const Description = styled.div`
-  line-height:25px ;
+  line-height:1.5rem ;
   a{
     color: white;
     transition:0.2s  ;
@@ -135,6 +136,12 @@ export const Description = styled.div`
     &:hover{
       filter: brightness(0.5);
     }
+  }
+
+
+  @media (max-width:500px) {
+    text-align: left;
+    font-size: 12px;
   }
 
 `
