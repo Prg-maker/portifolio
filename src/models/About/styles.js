@@ -42,8 +42,11 @@ export const WrapperContainer = styled.div`
     @media (max-width:380px){
       font-size: 3rem;
       margin-left: 0rem;
+      line-height: 4rem;
 
     }
+
+ 
   }
   @media (max-width:380px){
     margin-left: 1rem;

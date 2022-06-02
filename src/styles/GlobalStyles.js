@@ -10,6 +10,7 @@ export const GlobalStyles = createGlobalStyle`
   *,input,button{
     border: none;
     outline: none ;
+    overflow: hidden;
     font-family: 'Josefin Sans', sans-serif;
   }
 
